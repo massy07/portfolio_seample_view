@@ -1,0 +1,54 @@
+@import "./../../theme/utils/variable.scss";
+
+.portfolio-userinfo{
+  height: 40%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  .userinfo-request{ 
+    font-size: $first-font ;
+    font-family: $defaultFontBold;  
+    color: #ffffff;
+    text-align: center;
+  }
+  .userinfo-text-container{
+    padding: 1rem;
+    .userinfo-title{
+      font-size: $second-font ;
+      font-family: $defaultFontBold;  
+      color: $primary;
+    }
+    .userinfo-subtitle{
+      margin-left: 1rem;
+      font-size: $second-font ;
+      font-family: $defaultFontBold;  
+      color: $primary;
+    }
+  }
+}
+
+
+@media only screen and ( max-width:$mobile-width ) { 
+
+  .portfolio-userinfo{ 
+    .userinfo-request{ 
+      font-size: $second-font ;
+      font-family: $defaultFont;   
+    }
+    .userinfo-text-container{ 
+      .userinfo-title{
+        font-size: $second-font ;
+        font-family: $defaultFont;   
+      }
+      .userinfo-subtitle{
+        margin-left: 1rem;
+        font-size: $second-font ;
+        font-family: $defaultFont;   
+      }
+    }
+  }
+  
+}
