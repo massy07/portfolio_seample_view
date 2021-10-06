@@ -1,0 +1,39 @@
+@import "./../../theme/utils/variable.scss";
+
+.portfolio-menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .menu-container{
+    .menu-button{
+      height: 4rem;
+      width: 4rem;
+      background-color: transparent;
+  border: none;
+      .menu-icon{
+        width: 100%;
+      }
+    }
+    &.true{
+      .menu-button{ 
+        .menu-icon{
+          filter: invert(94%) sepia(83%) saturate(0%) hue-rotate(179deg) brightness(103%) contrast(102%);
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and ( max-width:$mobile-width ) { 
+  .portfolio-menu{
+    .menu-container{
+      .menu-button{
+        height: 3rem;
+        width: 3rem;  
+      } 
+    }
+  }
+}
