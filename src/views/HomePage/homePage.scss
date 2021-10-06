@@ -1,0 +1,31 @@
+@import "./../../theme/utils/variable.scss";
+
+.portfolio-homepage{
+  height: 45%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: $secondary;
+  padding: 2rem;
+  border: solid 0.06rem;
+  .portfolio-menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and ( max-width:$mobile-width ) { 
+  .portfolio-homepage{ 
+    height: 70%;
+    width: 70%;
+  }
+}
+
